@@ -7,21 +7,39 @@
   font-kerning: auto;
 }
 html {
+  background-image: url("background.jpg");
+  height: 100%;
+  width: 100%;
   font-size: 12pt;
   line-height: 1.4;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
 }
 body {
-  padding: 1em;
-  margin: 0 auto;
-  max-width: 800px;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  background: white;
+  padding: 2em;
+  width: 50%;
+  border-radius: 25px;
+
 }
 code,
 pre,
 blockquote {
   padding: .2em;
-  background: rgba(0,0,0,.1);
+  background: pink;
+  border-radius: 3px;
+
+}
+a {
+    color: hotpink;
+}
+button {
+  border: 1px solid pink;
+  border-radius: 3px;
+  background: white;
 }
 code,
 pre {
