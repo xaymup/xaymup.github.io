@@ -61,10 +61,16 @@ h1, h2, h3, h4, h5, h6 {
   h6 { font-size: 120%; }
 }
 @media only screen and (max-device-width: 480px) {
+  html{
+    background-size: cover;
+
+  }
   body {
   width: auto;
   left: 0%;
   font-size: 200%;
+
+
   }
   img {
   height: 15%;
