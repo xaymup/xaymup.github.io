@@ -38,6 +38,12 @@ blockquote {
 a {
     color: hotpink;
 }
+::selection {
+  background: hotpink
+}
+::-moz-selection {
+  background: hotpink
+}
 button {
   border: 1px solid pink;
   border-radius: 3px;
