@@ -7,7 +7,7 @@
   font-kerning: auto;
 }
 html {
-  background-image: url("background.jpg");
+  background: url("background.jpg");
   background-attachment: fixed;
   height: 100%;
   width: 100%;
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   letter-spacing: -.02em;
 }
-h1:hover{
+h1{
   animation: dropShadow 1.5s;
 }
 @keyframes dropShadow{
