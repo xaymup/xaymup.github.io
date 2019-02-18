@@ -58,6 +58,28 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   letter-spacing: -.02em;
 }
+h1:hover{
+  animation: dropShadow 1.5s;
+}
+@keyframes dropShadow{
+  25%{
+    text-shadow:
+      -5px 5px deeppink,
+      -4px 4px deeppink,
+      -3px 3px deeppink,
+      -2px 2px deeppink,
+      -1px 1px deeppink;
+  }
+	50%{
+		color: hotpink;
+		text-shadow:
+			5px 5px deeppink,
+      4px 4px deeppink,
+      3px 3px deeppink,
+      2px 2px deeppink,
+      1px 1px deeppink;
+	}
+}
 
 footnote {
     font-size: 6pt;
