@@ -43,6 +43,7 @@ blockquote {
 }
 a {
     color: hotpink;
+    decoration: none;
 }
 button {
   border: 1px solid pink;
