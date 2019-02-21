@@ -30,7 +30,11 @@ body {
 hr {
 	height: 10px;
 	border: 0;
-	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e1e4e8;
+  box-sizing: content-box;
+  overflow: visible;
 }
 ::selection {
   color:      white;
