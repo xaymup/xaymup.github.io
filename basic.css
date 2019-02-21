@@ -78,7 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1{
   animation: dropShadow 1.5s;
-  font-family: 'Lato:900i', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 @keyframes dropShadow{
   25%{
