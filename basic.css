@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:900i');
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -14,7 +17,7 @@ html {
   font-size: 12pt;
   line-height: 1.4;
   font-weight: 400;
-  font-family: 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  /* font-family: 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;*/
 }
 body {
   position: absolute;
@@ -25,6 +28,7 @@ body {
   width: 50%;
   border-radius: 15px;
   color: #212121;
+  font-family: 'Lato', sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 hr {
@@ -74,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1{
   animation: dropShadow 1.5s;
+  font-family: 'Lato:900i', sans-serif;
 }
 @keyframes dropShadow{
   25%{
