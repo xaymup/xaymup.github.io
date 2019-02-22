@@ -127,8 +127,12 @@ footnote {
   width: auto;
   left: 0%;
   font-size: 200%;
-
-
+  }
+  .date {
+    font-size: 190%;
+  }
+  .footnote{
+    font-size: 180%
   }
   img {
   height: 5%;
