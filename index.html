@@ -9,16 +9,16 @@ title: XaymupMollusk
   <script src="https://kit.fontawesome.com/0952d9c3a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
- <h1>XaymupMollusk</h1>
  <div class="posts">
    {% for post in site.posts %}
      <article class="post">
 
-       <h3>{{ post.title }}</h3>   <div class="date">Written on {{ post.date | date: "%B %e, %Y" }}</div>
+       <h3>{{ post.title }}</h3>
 
        <div class="entry">
          {{ post.content }}
        </div>
+       <div class="date">Written on {{ post.date | date: "%B %e, %Y" }}</div>
      </article>
    {% endfor %}
  </div>
