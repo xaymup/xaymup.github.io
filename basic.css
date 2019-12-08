@@ -45,6 +45,9 @@ hr {
   box-sizing: content-box;
   overflow: visible;
 }
+entry {
+  margin-left: 24px;
+}
 ::selection {
   color:      white;
   background: hotpink;
