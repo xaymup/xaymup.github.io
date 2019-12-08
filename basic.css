@@ -45,7 +45,7 @@ hr {
   box-sizing: content-box;
   overflow: visible;
 }
-entry {
+.entry {
   margin-left: 24px;
 }
 ::selection {
