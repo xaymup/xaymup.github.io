@@ -13,12 +13,11 @@ title: XaymupMollusk
    {% for post in site.posts %}
      <article class="post">
 
-       <h3>{{ post.title }}</h3>
+       <h3>{{ post.title }} <div class="date">• Written on {{ post.date | date: "%B %e, %Y" }}</div></h3>
 
        <div class="entry">
          {{ post.content }}
        </div>
-       <div class="date">Written on {{ post.date | date: "%B %e, %Y" }}</div>
      </article>
    {% endfor %}
  </div>
