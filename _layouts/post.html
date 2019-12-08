@@ -17,14 +17,10 @@
 <body>
  <a href="../"><h1>XaymupMollusk</h1></a>
  <article class="post">
-   <h3>{{ page.title }}</h3>
+   <h3>{{ page.title }} <div class="date">• Written on {{ page.date | date: "%B %e, %Y" }}</div></h3>
 
    <div class="entry">
      {{ content }}
-   </div>
-
-   <div class="date">
-     Written on {{ page.date | date: "%B %e, %Y" }}
    </div>
  </article>
  {% include Footer.html %}
