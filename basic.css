@@ -162,7 +162,7 @@ h1{
   h6 { font-size: 120%; }
 }
 @media only screen and (max-device-width: 480px) {
-  html{
+html{
     background-size: cover;
 
   }
@@ -170,6 +170,7 @@ h1{
   width: auto;
   left: 0%;
   font-size: 200%;
+  border-radius: 50px;
   }
   .date {
     font-size: 100%;
@@ -183,5 +184,19 @@ h1{
   }
   button {
   font-size: 100%;
+  }
+  a {
+  	font-size: 130%
+  }
+  button {
+  	margin-top: 15x;
+  	margin-bottom: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    border: 4px solid pink;
+    border-radius: 10px;
+  }
+  hr {
+  	height: 15px;
   }
 }
