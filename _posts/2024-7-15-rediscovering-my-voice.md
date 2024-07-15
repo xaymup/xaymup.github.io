@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rediscovering My Voice: A Long Overdue Update
+title: Rediscovering My Voice, A Long Overdue Update
 ---
 
 
