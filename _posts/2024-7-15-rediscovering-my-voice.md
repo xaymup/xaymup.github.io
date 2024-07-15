@@ -10,7 +10,7 @@ The truth is, I’ve been drained. Corporations have a way of doing that, squeez
 
 By the end of last year, I was laid off from my job. While this initially felt like a setback, it turned out to be a blessing in disguise. This unexpected turn of events gave me the freedom to rediscover my true self. Since then, I’ve been able to spend my free time at my computer again, and the constant urge to make the most of every night and weekend has faded.
 
-In this whirlwind, I had lost sight of what truly mattered to me: my art, my creativity, and my i3wm configuration. I look back and wonder how much more I could have accomplished, how many more moments of pure artistic expression I could have enjoyed if only the so-called “work-life balance” had been a reality, providing the time and energy to focus on things that truly contribute to my well-being.
+In this whirlwind, I had lost sight of what truly mattered to me: my art, my creativity, and my i3wm configuration. I look back and wonder how much more I could have accomplished, how many more moments of pure artistic expression I could have enjoyed if only the so-called “work-life balance” had been a reality, providing workers the time and energy to focus on things that truly contribute to their well-being.
 
 The world around us doesn’t make it any easier. The current state of affairs is disheartening, and it feels like every day brings new reasons to feel disillusioned. It’s easy to get caught up in negativity, to let it weigh you down and stifle your spirit.
 
