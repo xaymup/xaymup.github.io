@@ -21,8 +21,11 @@ title: XaymupMollusk
      <article class="post">
        <h3>{{ post.title }}</h3> <div class="date">• Written on {{ post.date | date: "%B %e, %Y" }}</div>
        <div class="entry">
-         {{ post.content }}
+         {{ post.excerpt }}
        </div>
+       {% if post.content.size > post.excerpt.size %}
+         <p><a href="{{ post.url }}">Read more...</a></p>
+       {% endif %}
      </article>
    {% endfor %}
  </div>
