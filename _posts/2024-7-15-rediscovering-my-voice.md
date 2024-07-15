@@ -8,7 +8,7 @@ It's funny how time flies. The last time I promised to write anything here was i
 
 The truth is, I've been drained. Corporations have a way of doing that. Squeezing every last drop of energy, creativity, and passion from you. They took the best out of me, consuming my time and leaving me feeling like a husk of my former self. Days turned into months, and months into years, with the grind of corporate life overshadowing everything else.
 
-By the end of last year, I was laid off from my last job. While this initially felt like yet another blow, it turned out to be a blessing in disguise. This unexpected turn of events forced me to reevaluate my priorities and gave me the freedom to rediscover my passions. Since then, I’ve performed two VJ gigs and bought my first DJ rack.
+By the end of last year, I was laid off from my last job. While this initially felt like yet another blow, it turned out to be a blessing in disguise. This unexpected turn of events gave me the freedom to rediscover my passions. Since then, I've returned to spend my free time at my computer.
 
 In this whirlwind, I had lost sight of what truly mattered to me: my art and my creativity. I look back and wonder how much more I could have accomplished, how much my music could have developed, and how many more moments of pure artistic expression I could have enjoyed if only I had the work-life balance that gave me the time and energy to focus on things I love.
 
