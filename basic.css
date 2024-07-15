@@ -26,7 +26,7 @@ body {
   background: white;
   padding: 2em;
   width: 60%;
-  border-radius: 15px;
+  border-radius: 15px 15px 0 0;
   color: #212121;
   font-family: 'Lato', sans-serif;
   margin-bottom: 200px;
