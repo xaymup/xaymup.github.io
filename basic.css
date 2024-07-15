@@ -49,6 +49,9 @@ hr {
   margin-left: 24px;
   margin-bottom: 24px;
 }
+.post {
+	margin-top: 24px;
+}
 ::selection {
   color:      white;
   background: hotpink;
