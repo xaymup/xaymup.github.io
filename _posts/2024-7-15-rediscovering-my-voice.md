@@ -16,4 +16,4 @@ The world around us doesn't make it any easier. The current state of affairs is 
 
 But perhaps this reflection is exactly what I needed. It's a wake-up call to reclaim my time, my energy, and my passion. To find a balance between the demands of everyday life and the creative pursuits that bring me joy. To not let another year pass without making an effort to reconnect with my art and my hometown community.
 
-So, here I am, breaking the silence. This post is a promise to myself and to you. A promise to prioritize what I love, to share more often, and to not let the pressures of the world steal my voice again. Let's see where this journey takes us. Thank you for sticking around!
+So, here I am, breaking the silence. This post is a promise to myself and to you. A promise to prioritize what I love, to share more often, and to not let the pressures of the world steal my voice again. Let's see where this journey takes us.
