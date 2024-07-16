@@ -21,7 +21,7 @@ In another example of poor HR practices I’ve encountered, a recruiter has been
 
 ###### Flaws in the Educational System
 
-My dissatisfaction extends to the educational system in Egypt, which caused me to drop out in the first place. Initially, I switched from studying dental medicine to computer science, hoping to find like-minded peers passionate about the field and eager for challenging and excited for current educational material. Instead, I found myself surrounded by students who were merely there to obtain a degree, with no real interest in the subject matter.
+My dissatisfaction extends to the educational system in Egypt, which caused me to drop out in the first place. Initially, I switched from studying dental medicine to computer science, hoping to find like-minded peers passionate about the field and eager for challenges. Instead, I found myself surrounded by students who were merely there to obtain a degree, with no real interest in the subject matter.
 
 The curriculum itself was severely outdated, focusing on technologies from the early 2000s, which are obsolete and irrelevant in the current job market. This lack of contemporary and engaging content not only stifled my enthusiasm but also fails to prepare students for the demands of the modern tech industry. The education system’s failure to provide relevant and up-to-date material is a significant factor in my decision to drop out and pursue my career independently.
 
