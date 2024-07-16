@@ -13,9 +13,11 @@ This rigid adherence to formal education overlooks the value of hands-on experie
 
 ###### Inefficient HR Processes
 
-Another source of frustration is the inefficiency of HR teams within Egyptian companies. For example, despite clearly stating the lack of a degree on my resume, I am frequently invited to interviews, often requiring significant travel and time investment. These companies proceed with the interview process only to reject me once they realize my educational background.
+Another source of frustration is the inefficiency of HR teams within most Egyptian tech companies. For example, despite clearly stating the lack of a degree on my resume, I am frequently invited to interviews, often requiring significant travel and time investment. These companies proceed with the interview process only to reject me once they realize my educational background.
 
 This practice not only wastes time but also reflects poorly on the human resources teams within these companies. It suggests a lack of attention to detail and a huge disregard for candidates' time and effort. Reading resumes thoroughly before scheduling interviews should be a basic HR practice.
+
+In another example of poor HR practices I’ve encountered, a recruiter has been trying to reach me by phone for two days. I answered once while I was driving and requested she contact me later. The next day I see a missed call after having lunch. Why not use email, which is a more efficient and respectful way to handle scheduling and communication? In fact, not a single local tech company I applied to has contacted me by email or proposed an online interview.
 
 ###### Flaws in the Educational System
 
