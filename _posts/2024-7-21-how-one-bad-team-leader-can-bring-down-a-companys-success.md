@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How One Wrong Team Leader Can Bring Down a Company's Success
+title: How One Bad Team Leader Can Bring Down a Company's Success
 ---
 Landing a dream job is a significant achievement in any career. For a time, I was fortunate enough to experience this, thriving and motivated in a role that seemed perfect. However, everything changed with the arrival of a new leader for my team, whose leadership style drastically altered the work environment.
 
@@ -10,7 +10,7 @@ This shift from a supportive and empowering atmosphere to one of constant scruti
 
 The situation worsened when that manager, perceiving my decreased passion and performance as problematic, chose to take disciplinary action rather than addressing the root causes of my decline. This punitive approach only deepened the sense of injustice and made the work environment even more toxic. Instead of fostering improvement, their actions exacerbated the issues, impacting not only my performance but also the overall morale of the team.
 
-This experience highlights how crucial effective leadership is to a company’s success. A single wrong team leader can have far-reaching consequences, undermining trust, stifling innovation, and diminishing job satisfaction. Open communication and clear boundaries are essential for maintaining a healthy work environment. It also emphasizes the importance of seeking out roles and cultures that align with these values for long-term career satisfaction and organizational success.
+This experience highlights how crucial effective leadership is to a company’s success. A single bad team leader can have far-reaching consequences, undermining trust, stifling innovation, and diminishing job satisfaction. Open communication and clear boundaries are essential for maintaining a healthy work environment. It also emphasizes the importance of seeking out roles and cultures that align with these values for long-term career satisfaction and organizational success.
 
 To cope with the challenging management style, I set personal boundaries and sought support from colleagues. Engaging in honest conversations with peers helped mitigate feelings of isolation. Additionally, I explored professional development opportunities outside of work to regain a sense of control and progress in my career.
 
