@@ -2,7 +2,7 @@
 layout: post
 title: Great Team Leadership is Key to Achieving Customer Success
 ---
-Landing a dream job is a significant achievement in any career. For a time, I was fortunate enough to experience this, thriving and motivated in a role that seemed perfect. However, everything changed with the arrival of a new leader for my team, whose leadership style drastically altered the work environment.
+Landing a dream job is a significant achievement in any career. For a time, I was fortunate enough to experience this, thriving and motivated in a role that seemed perfect. However, everything changed with the arrival of a new leader for the team, whose leadership style drastically altered the work environment.
 
 The new leadership brought with it micromanagement and an atmosphere of distrust. The constant oversight and unfounded suspicion eroded the entire team’s sense of autonomy, stifling creativity and enthusiasm. Tasks that once brought satisfaction now felt burdensome under the weight of continual scrutiny.
 
