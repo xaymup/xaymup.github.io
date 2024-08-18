@@ -24,3 +24,14 @@ function copySSH() {
   navigator.clipboard.writeText(copyText);
 }
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (sessionStorage.getItem('hasVisited')) {
+        // If the user has visited the page already, remove the fade-in class
+        document.body.classList.remove('fade-in');
+    } else {
+        // First visit: set the flag in sessionStorage
+        sessionStorage.setItem('hasVisited', 'true');
+    }
+    });
+</script>
