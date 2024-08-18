@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900i');
+
+:root {
+    --primary-color: hotpink;
+    --secondary-color: deeppink;
+    --text-color: #212121;
+    --bg-color: white;
+    --border-color: #e1e4e8;
+    --font-main: 'Lato', sans-serif;
+    --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
+* {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    font-kerning: auto;
+}
+
+html {
+    background: url("background.jpg") fixed;
+    height: 100%;
+    width: 100%;
+    font-size: 12pt;
+    line-height: 1.4;
+}
+
+body {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    background: var(--bg-color);
+    padding: 2em;
+    width: 60%;
+    border-radius: 15px 15px 0 0;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin-bottom: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fade-in {
+    animation: fadein 1s;
+}
+
+hr {
+    height: 5px;
+    border: 0;
+    margin: 24px 0;
+    background-color: var(--border-color);
+}
+
+.entry {
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.post {
+    margin-top: 24px;
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.prev-post {
+  margin-right: auto;
+}
+
+.next-post {
+  margin-left: auto;
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a.page-number {
+    display: inline-block;
+}
+.pagination a.current {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.pagination a {
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    border-color: var(--primary-color);
+}
+
+::selection {
+    color: white;
+    background: var(--primary-color);
+}
+
+code, pre, blockquote {
+    padding: .2em;
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+button {
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    background: var(--bg-color);
+    margin: 3px;
+}
+
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+code, pre {
+    font-family: var(--font-code);
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 .5em .7em;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+}
+
+h6 {
+    margin: 0px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.date {
+    color: #646464;
+    font-size: 10px;
+    margin-left: 24px;
+}
+
+.footnote {
+    font-size: 6pt;
+    line-height: 1;
+}
+
+@keyframes dropShadow {
+    25% {
+        text-shadow: -5px 5px var(--secondary-color), -4px 4px var(--secondary-color), -3px 3px var(--secondary-color), -2px 2px var(--secondary-color), -1px 1px var(--secondary-color);
+    }
+    50% {
+        color: var(--primary-color);
+        text-shadow: 5px 5px var(--secondary-color), 4px 4px var(--secondary-color), 3px 3px var(--secondary-color), 2px 2px var(--secondary-color), 1px 1px var(--secondary-color);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 600px) {
+    h1 { font-size: 300%; }
+    h2 { font-size: 200%; }
+    h3 { font-size: 180%; }
+    h4 { font-size: 160%; }
+    h5 { font-size: 140%; }
+    h6 { font-size: 120%; }
+}
+
+@media only screen and (max-device-width: 480px) {
+    html {
+        background-size: cover;
+    }
+    body {
+        width: auto;
+        left: 0%;
+        font-size: 200%;
+        border-radius: 50px 50px 0 0;
+    }
+    .date {
+        font-size: 100%;
+    }
+    .footnote {
+        font-size: 60%;
+    }
+    img {
+        height: 5%;
+        width: 5%;
+    }
+    button {
+        font-size: 100%;
+        margin: 15px 0 15px 15px;
+        padding: 10px;
+        border: 4px solid var(--primary-color);
+        border-radius: 10px;
+    }
+    hr {
+        height: 15px;
+    }
+}
