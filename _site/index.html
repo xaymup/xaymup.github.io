@@ -89,7 +89,7 @@
       <button><a href="https://github.com/Xaymup">Github</a></button>
       <button><a href="https://docs.google.com/document/d/1Hmj0DWr5iDjBzSjxTjszkPVP31_oaQ_MxgrQujJM6T0/edit?usp=sharing">Resume</a></button>
       <button><a href="https://buymeacoffee.com/xaymup">Buy me a coffee!</a></button>
-      <button style="cursor: pointer;" onclick="copySSH()"><a>Copy Public SSH Key</a></button>
+      <button style="width: 142.5px; color: hotpink; cursor: pointer;" id="ssh-btn" onclick="copySSH()">Copy Public SSH Key</button>
       <button><a href="mailto:hi@xaymup.me">Email</a></button>
     </p>
   </div>
@@ -102,6 +102,11 @@
 function copySSH() {
   var copyText = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4jclIWhnasiF8Qb+u42ivd8FPv016p65BVzk3zZqvKV32CL4g6JgSakRsbSE2Zv8BxxCix5cXn0JXtAn6SIGM9HfpoRDvsaKId4ykBI6COf543vRHwqzGNUmFDLVFmcT54nyCBapaO/kF+/vQO3bConLBswf+cmyaSj2e70dErd+JSpO1cnUD36McPfU8N1GCPTOfWJ3rb7S13Li1+vKIIMyd/JaKdG1jrTOen5MrgZqgV2NCsQyz1rkgN4kanILxjtEa6rOe8ts/RI83sHux/4KhCMx6d6BSW3gTVQjFyBBYmGlGglvF5ViKhw7wPXWbV9mjZxycmzchs4G+rnQBcPtJFg2qqgC8qVblEmX5hOM17naJOe0WRPKnLv0CpCO4GZquH4DDqgx8U9foZOjpR0bhvRAsDZi7066MbkBl2pyFuv7fAbbRxRceAUZdOx8zD0EI9mhC7oBiNgk51U+PVDMrGtMQIUbjkODoQovB7Rt1eoHMawptKo91Fl7ztK0= hi@xaymup.me";
   navigator.clipboard.writeText(copyText);
+  const button = document.getElementById('ssh-btn');
+  button.textContent = 'Copied!';
+  setTimeout(function() {
+            button.textContent = 'Copy Public SSH Key';
+        }, 2000);
 }
 </script>
 <!-- <script>
