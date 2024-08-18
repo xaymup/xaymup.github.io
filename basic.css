@@ -56,6 +56,27 @@ hr {
     margin-top: 24px;
 }
 
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination a {
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+}
+
+.pagination a.current {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.pagination a.page-number {
+  display: inline-block;
+}
+
 ::selection {
     color: white;
     background: var(--primary-color);
