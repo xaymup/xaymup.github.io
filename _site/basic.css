@@ -40,7 +40,13 @@ body {
 }
 
 .fade-in {
-    animation: fadein 1s;
+    animation: fadein .5s;
+    opacity: 1;
+}
+
+.fade-out {
+    transition: opacity .5s ease-out;
+    opacity: 0;
 }
 
 hr {

@@ -1,0 +1,23 @@
+<div class="posts">
+    {% for post in paginator.posts %}
+      <article class="post">
+        <h3>{{ post.title }}</h3> <div class="date">• Written on {{ post.date | date: "%B %e, %Y" }}</div>
+        <div class="entry">
+          {{ post.excerpt }}
+          {% if post.content.size > post.excerpt.size %}
+            <a href="{{ post.url }}">Read more...</a>
+            <br>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+   <div class="pagination">
+   {% for page in (1..paginator.total_pages) %}
+     {% if page == 1 %}
+       <a href="/" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+     {% else %}
+       <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+     {% endif %}
+   {% endfor %}
+ </div>
