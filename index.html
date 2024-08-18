@@ -14,8 +14,19 @@ title: XaymupMollusk
 
     gtag('config', 'G-DKR4GRTZNQ');
   </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    if (sessionStorage.getItem('hasVisited')) {
+        // If the user has visited the page already, remove the fade-in class
+        document.body.classList.remove('fade-in');
+    } else {
+        // First visit: set the flag in sessionStorage
+        sessionStorage.setItem('hasVisited', 'true');
+    }
+    });
+  </script>
 </head>
-<body>
+<body class="fade-in">
  <div class="posts">
    {% for post in paginator.posts %}
      <article class="post">
