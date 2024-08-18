@@ -31,12 +31,9 @@ title: XaymupMollusk
    {% endfor %}
  </div>
   <div class="pagination">
-   {% if paginator.previous_page %}
-     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-   {% endif %}
-   {% if paginator.next_page %}
-     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-   {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      <a href="{{ paginator.page_path(page) }}" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+    {% endfor %}
  </div>
   {% include Footer.html %}
 </body>
