@@ -32,7 +32,7 @@ title: XaymupMollusk
  </div>
   <div class="pagination">
     {% for page in (1..paginator.total_pages) %}
-      <a href="{{ paginator.page_path(page) }}" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+      <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
     {% endfor %}
  </div>
   {% include Footer.html %}
