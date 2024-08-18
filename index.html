@@ -34,9 +34,9 @@ title: XaymupMollusk
    <div class="pagination">
    {% for page in (1..paginator.total_pages) %}
      {% if page == 1 %}
-       <a href="/" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+       <a {% unless page == paginator.page %}href="/" {% endunless %}class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
      {% else %}
-       <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
+       <a {% unless page == paginator.page %}href="{{ site.paginate_path | relative_url | replace: ':num', page }}" {% endunless %}class="page-number {% if page == paginator.page %}current{% endif %}">{{ page }}</a>
      {% endif %}
    {% endfor %}
  </div>
