@@ -13,7 +13,7 @@ This experience has taught me the critical importance of giving back. Relationsh
 
 Kindness is a beautiful thing, but it should never be taken for granted or exploited. In any relationship, we must remember that our time, energy, and emotions are valuable. We deserve to receive as much as we give.
 
-<iframe src="https://open.spotify.com/track/426fkd1Ld1iaa5OGXH0g5v?si=d32c569b9d674326" width="300" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/426fkd1Ld1iaa5OGXH0g5v?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 For anyone going through a similar experience, remember this: you are worthy of someone who values your kindness, who communicates openly, and who reciprocates the love and care you offer. Don’t settle for less. Your heart deserves to be treated with the same compassion and respect that you extend to others.
 
