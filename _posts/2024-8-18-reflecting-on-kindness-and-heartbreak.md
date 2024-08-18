@@ -5,9 +5,9 @@ title: Reflecting on Kindness and Heartbreak
 
 Life has a way of teaching us lessons when we least expect it, often through the experiences that touch us most deeply. I’ve been thinking about the importance of reciprocity in relationships—whether romantic or platonic. It’s something we all understand in theory, but it becomes much clearer when we experience the pain of unreciprocated kindness.
 
-I was involved with someone who, despite my constant presence and care, remained emotionally distant. I poured my time, energy, and affection into our relationship, hoping that my efforts would at least be acknowledged. But as time passed, it became obvious that theese feelings weren’t mutual.
+I was involved with someone who, despite my constant presence and care, remained emotionally distant. I poured my time, energy, and affection into our relationship, hoping that my efforts would at least be acknowledged. But as time passed, it became obvious that these feelings weren’t mutual.
 
-What hurts the most isn't just the lack of reciprocity, but the unbearable stillness of unspoken words and unclear intentions. They couldn’t, or perhaps aren’t capable of grasping what's true inside their heart space. My heart broke, not just because I felt alone, but from the realization that I had given so much of myself to someone who could not offer even the simplest gift of honesty.
+What hurts the most isn't the lack of reciprocity, but the unbearable stillness of unspoken words and unclear intentions. They couldn’t, or perhaps aren’t capable of grasping what's true inside their heart space. My heart broke, not just because I felt alone, but from the realization that I had given so much of myself to someone who could not offer even the simplest gift of honesty.
 
 This has shown me the vital importance of giving back in relationships. They can’t be a solitary endeavor; they need mutual respect, open communication, and, above all, reciprocity. To simply be present is not enough—there must be a harmony, a balance of giving and receiving that honors the essence of our human nature.
 
