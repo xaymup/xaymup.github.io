@@ -25,15 +25,15 @@
    </div>
  </article>
   <div class="post-navigation">
-  {% if previous %}
-    <a href="{{ previous.url }}" class="prev-post">
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}" class="prev-post">
       &laquo; Previous: {{ previous.title }}
     </a>
   {% endif %}
 
-  {% if next %}
-    <a href="{{ next.url }}" class="next-post">
-      Next: {{ next.title }} &raquo;
+  {% if page.next %}
+    <a href="{{ page.next.url }}" class="next-post">
+      Next: {{ page.next.title }} &raquo;
     </a>
   {% endif %}
 </div>
