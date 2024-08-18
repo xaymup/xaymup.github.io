@@ -89,7 +89,7 @@
       <button><a href="https://github.com/Xaymup">Github</a></button>
       <button><a href="https://docs.google.com/document/d/1Hmj0DWr5iDjBzSjxTjszkPVP31_oaQ_MxgrQujJM6T0/edit?usp=sharing">Resume</a></button>
       <button><a href="https://buymeacoffee.com/xaymup">Buy me a coffee!</a></button>
-      <button onclick="copySSH()"><a>Copy Public SSH Key</a></button>
+      <button style="cursor: pointer;" onclick="copySSH()"><a>Copy Public SSH Key</a></button>
       <button><a href="mailto:hi@xaymup.me">Email</a></button>
     </p>
   </div>
@@ -145,7 +145,7 @@ function copySSH() {
   // Handle click events on navigation links
  
   document.addEventListener('click', function(event) {
-    if (event.target.matches('a') && !event.target.getAttribute('href').startsWith('http')) {
+    if (event.target.matches('a') && !(event.target.getAttribute('href').startsWith('http') || event.target.getAttribute('href').startsWith('mailto'))) {
       event.preventDefault();
       loadContent(event.target.href);
     }
