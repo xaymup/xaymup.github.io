@@ -143,8 +143,9 @@ function copySSH() {
   }
 
   // Handle click events on navigation links
+ 
   document.addEventListener('click', function(event) {
-    if (event.target.matches('a')) {
+    if (event.target.matches('a') && !event.target.getAttribute('href').startsWith('http')) {
       event.preventDefault();
       loadContent(event.target.href);
     }
