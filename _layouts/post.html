@@ -24,6 +24,19 @@
      {{ content }}
    </div>
  </article>
+  <div class="post-navigation">
+  {% if previous %}
+    <a href="{{ previous.url }}" class="prev-post">
+      &laquo; Previous: {{ previous.title }}
+    </a>
+  {% endif %}
+
+  {% if next %}
+    <a href="{{ next.url }}" class="next-post">
+      Next: {{ next.title }} &raquo;
+    </a>
+  {% endif %}
+</div>
  {% include Footer.html %}
 </body>
 </html>
