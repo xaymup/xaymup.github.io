@@ -19,4 +19,4 @@ The real highlight has been seeing how this app can help others, whether they’
 ###### What's Next?
 I don’t have a set plan for future updates just yet, but I’m open to ideas and improvements. If you see something coming up or have suggestions, let me know!
 
-The app is live [here](https://xaymup.me/djset-generator/), though it requires an invitation due to Spotify's API limitations. I hope you find it as useful and enjoyable as I have. If you have any feedback or just want to chat about music and tech, feel free to reach out.
+The app is live [here](https://xaymup.me/djset-generator/), though it requires an invitation due to Spotify's API limitations. Feel free to email me your Spotify email to include you in the API users list, or fork it with your own API key. I hope you find it as useful and enjoyable as I have. If you have any feedback or just want to chat about music and tech, feel free to reach out!
