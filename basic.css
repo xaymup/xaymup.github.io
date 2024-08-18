@@ -56,6 +56,10 @@ hr {
     margin-top: 24px;
 }
 
+.pagination {
+  text-align: center;
+  margin: 20px 0;
+}
 
 .pagination a.page-number {
     display: inline-block;
