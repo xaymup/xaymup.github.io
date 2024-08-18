@@ -17,7 +17,7 @@ title: XaymupMollusk
 </head>
 <body>
  <div class="posts">
-   {% for post in site.posts %}
+   {% for post in paginator.posts %}
      <article class="post">
        <h3>{{ post.title }}</h3> <div class="date">• Written on {{ post.date | date: "%B %e, %Y" }}</div>
        <div class="entry">
@@ -29,6 +29,14 @@ title: XaymupMollusk
        </div>
      </article>
    {% endfor %}
+ </div>
+  <div class="pagination">
+   {% if paginator.previous_page %}
+     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+   {% endif %}
+   {% if paginator.next_page %}
+     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+   {% endif %}
  </div>
   {% include Footer.html %}
 </body>
