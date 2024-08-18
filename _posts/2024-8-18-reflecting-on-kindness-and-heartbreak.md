@@ -15,6 +15,6 @@ Kindness is a beautiful thing, but it should never be taken for granted or explo
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/426fkd1Ld1iaa5OGXH0g5v?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-For anyone going through a similar experience, remember this: you are worthy of someone who values your kindness, who communicates openly, and who reciprocates the love and care you offer. Don’t settle for less. Your heart deserves to be treated with the same compassion and respect that you extend to others.
+For anyone going through a similar experience, please remember this: you are worthy of someone who values your kindness, who communicates openly, and who reciprocates the love and care you offer. Don’t settle for less. Your heart deserves to be treated with the same compassion and respect that you extend to others.
 
 As I move forward from this experience, I carry with me a renewed commitment to seek out and nurture relationships that are built on mutual respect and reciprocity. It's a lesson learned the hard way, but one that will guide me in all my future connections.
