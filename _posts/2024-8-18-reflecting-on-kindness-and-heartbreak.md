@@ -3,7 +3,7 @@ layout: post
 title: Reflecting on Kindness and Heartbreak
 ---
 
-Life has a way of teaching us lessons when we least expect it, often through the experiences that touch us most deeply. Recently, I’ve been thinking about the importance of reciprocity in relationships—whether romantic or platonic. It’s something we all understand in theory, but it becomes much clearer when we experience the pain of unreciprocated kindness.
+Life has a way of teaching us lessons when we least expect it, often through the experiences that touch us most deeply. I’ve been thinking about the importance of reciprocity in relationships—whether romantic or platonic. It’s something we all understand in theory, but it becomes much clearer when we experience the pain of unreciprocated kindness.
 
 I was involved with someone who, despite my constant presence and care, remained emotionally distant. I poured my time, energy, and affection into our relationship, hoping that my efforts would at least be acknowledged. But as time passed, it became obvious that theese feelings weren’t mutual.
 
