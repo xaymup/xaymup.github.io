@@ -16,7 +16,7 @@
   </script>
 </head>
 <body>
- <a href="javascript:history.back()">← Back</a>
+ <a href="../">← Home</a>
  <article class="post">
    <h3>{{ page.title }}</h3><div class="date">• Written on {{ page.date | date: "%B %e, %Y" }}</div>
 
@@ -27,13 +27,13 @@
   <div class="post-navigation">
   {% if page.previous %}
     <a href="{{ page.previous.url }}" class="prev-post">
-      &laquo; Previous: {{ page.previous.title }}
+      ← {{ page.previous.title }}
     </a>
   {% endif %}
 
   {% if page.next %}
     <a href="{{ page.next.url }}" class="next-post">
-      Next: {{ page.next.title }} &raquo;
+      Next: {{ page.next.title }} →
     </a>
   {% endif %}
 </div>
