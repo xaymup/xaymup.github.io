@@ -56,6 +56,20 @@ hr {
     margin-top: 24px;
 }
 
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.prev-post {
+  margin-right: auto;
+}
+
+.next-post {
+  margin-left: auto;
+}
+
 .pagination {
   text-align: center;
   margin: 20px 0;
