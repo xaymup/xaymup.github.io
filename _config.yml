@@ -87,6 +87,7 @@ exclude:
 
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 # Pagination settings
 paginate: 4
 paginate_path: "/page:num/"
