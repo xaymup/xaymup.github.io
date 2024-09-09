@@ -11,8 +11,7 @@ GoPanel is a server management panel that I built using Go for the backend and V
 
 ## What’s Inside?
 
-![image](https://github.com/user-attachments/assets/eb0f7f77-111c-4e47-a597-3b216c1b56e0)
-
+<img width="750" src="https://github.com/user-attachments/assets/eb0f7f77-111c-4e47-a597-3b216c1b56e0">
 
 Here’s a quick rundown of what GoPanel offers so far:
 
@@ -22,13 +21,13 @@ Here’s a quick rundown of what GoPanel offers so far:
 
 - **Nginx Configuration Management:** There’s a site management panel that works directly with Nginx configurations. This means you can manage your sites and their settings right from the panel, without having to dig into Nginx config files manually.
 
-![image](https://github.com/user-attachments/assets/d9a24f3d-56a4-4652-80ec-a6f72742f54f)
+<img width="750" src="https://github.com/user-attachments/assets/d9a24f3d-56a4-4652-80ec-a6f72742f54f">
 
 - **File Manager:** The built-in file manager lets you handle files on your server directly through the panel and easily fix the permissions for the web server.
 
-![image](https://github.com/user-attachments/assets/a2b44ddb-a1f4-481b-b843-061031578aef)
+<img width="750" src="https://github.com/user-attachments/assets/a2b44ddb-a1f4-481b-b843-061031578aef">
 
-![image](https://github.com/user-attachments/assets/62bc929c-fd6e-4a0a-9daa-f66707add3f4)
+<img width="750" src="https://github.com/user-attachments/assets/62bc929c-fd6e-4a0a-9daa-f66707add3f4">
 
 - **Extensible API:** GoPanel comes with an API that lets you extend its functionality and manage a lot of things on your server, including file management, system load info, and more to come. 
 
