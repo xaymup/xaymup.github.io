@@ -5,11 +5,11 @@ title: GoPanel, A Minimalist Server Management Panel Written In Go
 
 I wanted to share a little bit about a side project I’ve been working on recently. It’s called **GoPanel**. It’s a minimalist server management panel designed for easily managing LEMP (Linux, Nginx, MySQL/MariaDB, PHP) stacks. I’ve been having a lot of fun building it and thought I’d give you a peek into what it does and where it’s headed.
 
-## What is GoPanel?
+### What is GoPanel?
 
 GoPanel is a server management panel that I built using Go for the backend and Vue.js for the front end. The main idea was to create a simple and effective tool for managing LEMP stacks on Debian-based systems. If you’re familiar with server management, you know it can sometimes get pretty complex to set things up for your website, so I wanted to create something that makes the process a bit easier.
 
-## What’s Inside?
+### What’s Inside?
 
 <img width="750" src="https://github.com/user-attachments/assets/eb0f7f77-111c-4e47-a597-3b216c1b56e0">
 
@@ -31,7 +31,7 @@ Here’s a quick rundown of what GoPanel offers so far:
 
 - **Extensible API:** GoPanel comes with an API that lets you extend its functionality and manage a lot of things on your server, including file management, system load info, and more to come. 
 
-## What’s Still to Come?
+### What’s Yet to Come?
 
 There are a few things on my to-do list for GoPanel, including:
 
@@ -45,7 +45,7 @@ There are a few things on my to-do list for GoPanel, including:
 
 - **Support for Other Distros:** Right now, GoPanel supports Debian-based systems, but I’m hoping to extend compatibility to other Linux distributions in the future.
 
-## Check It Out
+### Check It Out
 
 If you’re curious and want to check out the project, you can find it on [GitHub](https://github.com/xaymup/GoPanel). It’s still a work in progress, and I’m always open to feedback or contributions. 
 
