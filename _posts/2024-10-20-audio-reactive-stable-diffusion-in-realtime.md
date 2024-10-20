@@ -5,7 +5,7 @@ title: Audio Reactive Stable Diffusion in Realtime
 
 I used Olegchomp's [TouchDiffusion](https://github.com/olegchomp/TouchDiffusion) component in TouchDesigner to create a real-time audio-visual experience. This component allowed me to blend diffusion models with live audio input, generating captivating visuals that react in sync with the sound. The result is a dynamic, immersive visuals that showcases the power of combining generative art with real-time sound analysis.
 
-[aaaaaaaa.webm](https://github.com/user-attachments/assets/dc7205de-f073-4b97-bc35-78067aaf4913)
+![video](https://github.com/user-attachments/assets/dc7205de-f073-4b97-bc35-78067aaf4913)
 
 The component utilizes img2img generation using [StreamDiffusion](https://github.com/cumulo-autumn/StreamDiffusion) to create real-time visuals based on an audio-reactive mask I developed. I've achieved impressive results with both SD-turbo and realisticVisionV60B1 + LCM.
 
