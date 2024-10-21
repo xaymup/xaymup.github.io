@@ -5,7 +5,7 @@ title: Audio Reactive Stable Diffusion in Realtime
 
 I used Olegchomp's [TouchDiffusion](https://github.com/olegchomp/TouchDiffusion) component in TouchDesigner to create a real-time audio-visual experience. This component allowed me to blend diffusion models with live audio input, generating captivating visuals that react in sync with the sound. The result is a dynamic, immersive visuals that showcases the power of combining generative art with real-time sound analysis.
 
-<video controls>
+<video controls style="width: 500px; height: 500px;">
   <source src="../video1.webm" type="video/webm">
 </video>
 
