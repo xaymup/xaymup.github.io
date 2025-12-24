@@ -3,7 +3,7 @@ layout: post
 title: AI Hype Is a Shitshow
 ---
 
-Let’s be honest: the current AI hype cycle is mostly bullshit. Are you seeing any real benifets to all the AI tech we have got so far other than the stupid TikToks or getting claude to do the coding for you?
+Let’s be honest: the current AI hype cycle is mostly bullshit. Are you seeing any real benifets to all the AI tech we have got so far other than the stupid TikToks or getting Copilot to do the coding for you?
 
 Not because AI isn’t real, or because machine learning hasn’t produced real results. It has. The problem is the culture built around it—one driven by arrogant businessmen, Hollywood-fueled fantasies, and a swarm of wannabe “tech guys” who contribute almost nothing to actual AI development while loudly claiming they’re shaping the future.
 
