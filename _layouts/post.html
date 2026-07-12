@@ -1,41 +1,71 @@
 ---
-
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>{{ page.title }} - Mohamed Alaa</title>
-  <link href=../basic.css rel=stylesheet>
+  <link href="/basic.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKR4GRTZNQ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-DKR4GRTZNQ');
   </script>
 </head>
-<body>
- <a href="../">← Home</a>
- <article class="post">
-   <h3>{{ page.title }}</h3><div class="date">• Written on {{ page.date | date: "%B %e, %Y" }}</div>
+<body class="fade-in">
+  <div id="content">
+    <a href="/" class="home-link">← Home</a>
+    
+    <article class="post">
+      <h1>{{ page.title }}</h1>
+      <div class="date">• Written on {{ page.date | date: "%B %e, %Y" }}</div>
 
-   <div class="entry">
-     {{ content }}
-   </div>
- </article>
-  <div class="post-navigation">
-  {% if page.previous %}
-    <a href="{{ page.previous.url }}" class="prev-post">
-      ← {{ page.previous.title }}
-    </a>
-  {% endif %}
+      <div class="entry">
+        {{ content }}
+      </div>
+    </article>
 
-  {% if page.next %}
-    <a href="{{ page.next.url }}" class="next-post">
-      {{ page.next.title }} →
-    </a>
-  {% endif %}
-</div>
+    <div class="post-navigation">
+      {% if page.previous %}<a href="{{ page.previous.url }}">← {{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a href="{{ page.next.url }}">{{ page.next.title }} →</a>{% endif %}
+    </div>
+  </div>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function loadContent(url) {
+      const contentArea = document.getElementById('content');
+      contentArea.classList.add('fade-out');
+      setTimeout(() => {
+        fetch(url).then(res => res.text()).then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newContent = doc.querySelector('#content');
+          if (newContent) {
+            scrollToTop(); // RESTORED
+            contentArea.innerHTML = newContent.innerHTML;
+            document.title = doc.querySelector('title').innerText;
+            history.pushState(null, '', url);
+            contentArea.classList.remove('fade-out');
+            contentArea.classList.add('fade-in');
+          }
+        });
+      }, 400);
+    }
+    document.addEventListener('click', e => {
+      const link = e.target.closest('a');
+      if (link && link.origin === window.location.origin && !link.hash && link.target !== "_blank") {
+        e.preventDefault();
+        loadContent(link.href);
+      }
+    });
+    window.onpopstate = () => loadContent(location.pathname);
+  </script>
 </body>
 </html>
