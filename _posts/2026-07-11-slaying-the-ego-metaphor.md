@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Slaying the Ego: The Fire of Iblis and the Metaphorical Death of the Hypocrite"
-date: 2026-07-12 10:24:00 +0200
+date: 2026-07-11 10:24:00 +0200
 categories: spirituality philosophy neurobiology self-improvement
 ---
 
