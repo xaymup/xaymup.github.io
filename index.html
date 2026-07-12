@@ -6,8 +6,9 @@ description: This is the personal website of Mohamed Alaa, a dedicated WordPress
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mohamed Alaa</title>
+  <title>{{ page.title }}</title>
   <link href="/basic.css" rel="stylesheet">
+  <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKR4GRTZNQ"></script>
   <script>
@@ -41,26 +42,35 @@ description: This is the personal website of Mohamed Alaa, a dedicated WordPress
       {% endfor %}
     </div>
 
+    <hr>
     <div class="profile-section">
-      <img class="profile-img" src="https://avatars0.githubusercontent.com/u/3389529" alt="Mohamed Alaa">
+      <div>
+        <img class="profile-img" src="https://avatars0.githubusercontent.com/u/3389529" alt="Mohamed Alaa">
+      </div>
       <div class="profile-info">
         <h6>Mohamed Alaa, Undergraduate Computer Science Student.</h6>
-        <p>I spend a lot of time on the computer, mostly working with Linux and free software. I write code, make music, and produce audiovisual experiences.</p>
+        <p>I spend a lot of time on the computer, mostly working with Linux and free software. I write code, make music, and produce audiovisual experiences. I love music, art, and being outside.</p>
         <div class="button-group">
+          <button><a href="https://www.linkedin.com/in/mohamed-alaa-740b6252">LinkedIn</a></button>
           <button><a href="https://github.com/Xaymup">Github</a></button>
-          <button id="ssh-btn" onclick="copySSH()">Copy SSH Key</button>
+          <button><a href="https://docs.google.com/document/d/1Hmj0DWr5iDjBzSjxTjszkPVP31_oaQ_MxgrQujJM6T0/edit?usp=sharing">Resume</a></button>
+          <button><a href="https://buymeacoffee.com/xaymup">Buy me a coffee!</a></button>
+          <button id="ssh-btn" onclick="copySSH()">Copy Public SSH Key</button>
           <button><a href="mailto:hi@xaymup.me">Email</a></button>
         </div>
       </div>
     </div>
+
+    <center><a href="https://kopimi.com/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAaCAYAAABCfffNAAAXMXpUWHRSYXcgcHJvZmlsZSB0eXBlIGV4aWYAAHja7ZpZkiM5kkT/cYo5gmOHHQerSN9gjj9P4YzcuiqrenpkvjooGYwknXDATE1NFaDb//2P4/6Ln+Kf5FKurVgpDz/JkoXOH+15f95nLru/3//Y5z3/8+vO988bgZciz/H9b9mf6zuv5+8fqOnz+vj5dVfnZ5z2Gch/G/j+RN1Zf3+ua5+BYnhf95//u6+Z9vTDcj7/wvwM+xn81/+nSjBWZrwYXNjRx4ffRXeJzCC22Hm2+7txkV7rMcXC7xzDH8fOnfLHwfv21y+xe/rn9fhzKNzzNVD5JUaf133+5fX47Tbh56x9v/NPb0zvy/Pjzw+xO2e1c/a7up4KkSrus6ivpdy/uHAQyng/VnhU/mX+rvdhPBpLnGRskc3BYzpvPhDt45Nfvvvj932efjLFFHaoPIcwQ7yvtViDhXkTkPTwJ1QSsxw5CnGStcjL4dtc/L2v3ftN37jz8lwZPIN5PvFPD/dHL/5vHt8GOkfQ9f5pnzgVJTgINUxDmdNvriIh/nximm9878P9gJvnh8RGMphvmBsL7M94hxjZf8dWvHmOXJep/uctDV/XZwBCxL0zk/GRDDzFx+whihpC9Z44NvLTmXmIKQwy4HMOy7tDbmIsJIdq4N58pvp7bcjhfRlqIRGZEqmkhtIhWSll8FNTA0M9x5xczrnkmlu23EssqeRSSi3iqF5jTTXXUmtt1WpvsaWWW2m1tWatW7AIhWUrVp01M+udm3aG7ny6c0XvI4w40sijjDrasNEn8Jlp5llmnW3a7CusuCj/VVZ1qy1bffsNlHbaeZddd9u2+wFrJ5508imnnnbs9G9Z85+y/Slr/pfM/T5r/pM1ZSzd6+r3rPFyrV9DeNFJVs7IWEiejFdlAEAH5expPqWgzClnjwWKIgey5rOSs7wyRgbT9iEf/y133zP327y5nP6lvIU/y5xT6v4vMueUuk/m/jlvf5C11W9HiTdBqkLF9IkHYuOC3XpoXT3pr5/HYrnjPLabVZaQLZ2wzJVtITXv1xpzVW8hJx9qX7TCwCrJeos7nFkPq989zljPnellgLNH3" alt="Kopimi!" /></a></center>
   </div>
 
   <script>
     function copySSH() {
-      navigator.clipboard.writeText("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4jclIWhnasiF8Qb+u42ivd8FPv016p65BVzk3zZqvKV32CL4g6JgSakRsbSE2Zv8BxxCix5cXn0JXtAn6SIGM9HfpoRDvsaKId4ykBI6COf543vRHwqzGNUmFDLVFmcT54nyCBapaO/kF+/vQO3bConLBswf+cmyaSj2e70dErd+JSpO1cnUD36McPfU8N1GCPTOfWJ3rb7S13Li1+vKIIMyd/JaKdG1jrTOen5MrgZqgV2NCsQyz1rkgN4kanILxjtEa6rOe8ts/RI83sHux/4KhCMx6d6BSW3gTVQjFyBBYmGlGglvF5ViKhw7wPXWbV9mjZxycmzchs4G+rnQBcPtJFg2qqgC8qVblEmX5hOM17naJOe0WRPKnLv0CpCO4GZquH4DDqgx8U9foZOjpR0bhvRAsDZi7066MbkBl2pyFuv7fAbbRxRceAUZdOx8zD0EI9mhC7oBiNgk51U+PVDMrGtMQIUbjkODoQovB7Rt1eoHMawptKo91Fl7ztK0= hi@xaymup.me");
+      var copyText = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC4jclIWhnasiF8Qb+u42ivd8FPv016p65BVzk3zZqvKV32CL4g6JgSakRsbSE2Zv8BxxCix5cXn0JXtAn6SIGM9HfpoRDvsaKId4ykBI6COf543vRHwqzGNUmFDLVFmcT54nyCBapaO/kF+/vQO3bConLBswf+cmyaSj2e70dErd+JSpO1cnUD36McPfU8N1GCPTOfWJ3rb7S13Li1+vKIIMyd/JaKdG1jrTOen5MrgZqgV2NCsQyz1rkgN4kanILxjtEa6rOe8ts/RI83sHux/4KhCMx6d6BSW3gTVQjFyBBYmGlGglvF5ViKhw7wPXWbV9mjZxycmzchs4G+rnQBcPtJFg2qqgC8qVblEmX5hOM17naJOe0WRPKnLv0CpCO4GZquH4DDqgx8U9foZOjpR0bhvRAsDZi7066MbkBl2pyFuv7fAbbRxRceAUZdOx8zD0EI9mhC7oBiNgk51U+PVDMrGtMQIUbjkODoQovB7Rt1eoHMawptKo91Fl7ztK0= hi@xaymup.me";
+      navigator.clipboard.writeText(copyText);
       const btn = document.getElementById('ssh-btn');
       btn.textContent = 'Copied!';
-      setTimeout(() => btn.textContent = 'Copy SSH Key', 2000);
+      setTimeout(() => btn.textContent = 'Copy Public SSH Key', 2000);
     }
 
     function scrollToTop() {
@@ -70,23 +80,20 @@ description: This is the personal website of Mohamed Alaa, a dedicated WordPress
     function loadContent(url) {
       const contentArea = document.getElementById('content');
       contentArea.classList.add('fade-out');
-      
       setTimeout(() => {
-        fetch(url)
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, 'text/html');
-            const newContent = doc.querySelector('#content');
-            if (newContent) {
-              scrollToTop(); // RESTORED
-              contentArea.innerHTML = newContent.innerHTML;
-              document.title = doc.querySelector('title').innerText;
-              history.pushState(null, '', url);
-              contentArea.classList.remove('fade-out');
-              contentArea.classList.add('fade-in');
-            }
-          });
+        fetch(url).then(res => res.text()).then(html => {
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(html, 'text/html');
+          const newContent = doc.querySelector('#content');
+          if (newContent) {
+            scrollToTop();
+            contentArea.innerHTML = newContent.innerHTML;
+            document.title = doc.querySelector('title').innerText;
+            history.pushState(null, '', url);
+            contentArea.classList.remove('fade-out');
+            contentArea.classList.add('fade-in');
+          }
+        });
       }, 400);
     }
 
@@ -97,7 +104,6 @@ description: This is the personal website of Mohamed Alaa, a dedicated WordPress
         loadContent(link.href);
       }
     });
-
     window.onpopstate = () => loadContent(location.pathname);
   </script>
 </body>
