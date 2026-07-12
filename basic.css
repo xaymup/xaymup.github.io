@@ -2,19 +2,22 @@
 
 :root {
     --primary: hotpink;
-    --primary-dark: deeppink;
+    --primary-dark: #ff1493;
     --text: #2d3436;
     --text-light: #636e72;
-    --bg-body: #f5f6fa; /* Light grey background to make the white card pop */
     --bg-card: #ffffff;
     --border: #e1e4e8;
     --radius: 12px;
     --shadow: 0 10px 30px rgba(0,0,0,0.1);
     --font-main: 'Lato', sans-serif;
+    /* Animation speed - must match the setTimeout in your JS */
+    --transition-speed: 0.4s; 
 }
 
-/* Global Reset */
+/* Global Reset & Accessibility */
 * { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
 
 body {
     font-family: var(--font-main);
@@ -25,109 +28,160 @@ body {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-/* Main Content Container */
+/* Main Content Container - The "Stage" */
 #content {
     background: var(--bg-card);
     width: 100%;
     max-width: 850px;
-    padding: 3rem;
+    padding: 3.5rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    animation: fadeIn 0.5s ease-out;
+    
+    /* Crucial for smooth AJAX transitions */
+    min-height: 500px; 
+    transition: opacity var(--transition-speed) ease-in-out, 
+                transform var(--transition-speed) ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Post List Styling */
+/* State Classes for JS Navigation */
+.fade-out {
+    opacity: 0 !important;
+    transform: translateY(-10px) !important;
+    pointer-events: none; /* Prevents clicking links during transition */
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Post Styling */
 .post {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .post h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--text);
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
 }
 
 .date {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
 }
 
 .entry {
-    color: var(--text);
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .entry a {
     color: var(--primary);
     font-weight: bold;
-    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.entry a:hover {
+    border-color: var(--primary);
+}
+
+/* Code & Blockquotes */
+code {
+    background: #f1f2f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+blockquote {
+    border-left: 4px solid var(--primary);
+    padding-left: 20px;
+    font-style: italic;
+    color: var(--text-light);
+    margin: 1.5rem 0;
 }
 
 /* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 2rem 0;
+    gap: 8px;
+    padding: 2rem 0;
 }
 
 .pagination a {
-    padding: 8px 16px;
+    padding: 10px 18px;
     border: 1px solid var(--primary);
-    border-radius: 6px;
+    border-radius: 8px;
     color: var(--primary);
     text-decoration: none;
-    transition: 0.2s;
+    font-weight: bold;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .pagination a.current {
     background: var(--primary);
     color: white;
+    cursor: default;
 }
 
-/* Profile Bio Section (Replaces the floats) */
+.pagination a:hover:not(.current) {
+    background: #fff0f6;
+    transform: translateY(-2px);
+}
+
+/* Profile Bio Section */
 .profile-section {
     display: flex;
-    gap: 25px;
-    padding: 2rem 0;
+    gap: 30px;
+    padding: 2.5rem 0;
     align-items: center;
 }
 
 .profile-img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    border: 3px solid var(--primary);
+    border: 4px solid var(--primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .profile-info h6 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    font-weight: 900;
 }
 
 /* Button Cloud */
 .button-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 12px;
+    margin-top: 20px;
 }
 
-button, .btn {
-    appearance: none;
+button {
     background: transparent;
-    border: 1px solid var(--primary);
-    padding: 8px 16px;
-    border-radius: 6px;
+    border: 2px solid var(--primary);
+    padding: 8px 18px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
-    font-family: var(--font-main);
+    transition: 0.3s all;
+    font-weight: 700;
 }
 
 button a { 
@@ -137,42 +191,56 @@ button a {
 
 button:hover {
     background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
 }
 
-button:hover a, button:hover {
+button:hover a, 
+button:hover#ssh-btn {
     color: white !important;
 }
 
-/* Copy SSH Button Special Styling */
 #ssh-btn {
     border-style: dashed;
-    font-weight: bold;
+    color: var(--primary);
 }
 
-/* Footer image */
+/* Footer Image */
 center img {
-    margin-top: 2rem;
-    opacity: 0.7;
+    margin-top: 3rem;
+    opacity: 0.5;
     transition: 0.3s;
+    filter: grayscale(1);
 }
 
-center img:hover { opacity: 1; }
-
-/* Animations */
-.fade-in { animation: fadeIn 0.5s ease-in; }
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+center img:hover { 
+    opacity: 1; 
+    filter: grayscale(0);
 }
 
-/* Responsive Mobile Adjustments */
-@media (max-width: 600px) {
-    #content { padding: 1.5rem; }
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    body { padding: 20px 10px; }
+    
+    #content { 
+        padding: 2rem 1.5rem; 
+        border-radius: 0;
+    }
+
     .profile-section {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
     }
+
     .button-group {
         justify-content: center;
+    }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+    #content {
+        transition: none;
     }
 }
