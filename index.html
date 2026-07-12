@@ -95,40 +95,57 @@ function copySSH() {
     });
   }
 
-  function loadContent(url) {
+function loadContent(url) {
+  const contentArea = document.getElementById('content');
+  
+  // 1. Start Fade Out
+  contentArea.classList.remove('fade-in');
+  contentArea.classList.add('fade-out');
 
+  // Wait for the .5s fade-out animation to finish
+  setTimeout(() => {
     fetch(url)
       .then(response => response.text())
       .then(html => {
-        scrollToTop();
-        document.getElementById('content').classList.remove('fade-in');
-        document.getElementById('content').classList.add('fade-out');
-        setTimeout(() => {
-          document.getElementById('content').classList.remove('fade-out');
-          document.getElementById('content').classList.add('fade-in');
-          document.getElementById('content').innerHTML = html;
-          history.pushState(null, '', url);
-        }, 500);
+        // 2. Parse the new HTML string
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const newContent = doc.querySelector('#content').innerHTML;
+        const newTitle = doc.querySelector('title').innerText;
+
+        // 3. Update the Page
+        contentArea.innerHTML = newContent;
+        document.title = newTitle;
+        history.pushState(null, '', url);
+        
+        // 4. Scroll to top and Fade In
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        contentArea.classList.remove('fade-out');
+        contentArea.classList.add('fade-in');
       })
       .catch(error => {
-        document.getElementById('content').innerHTML = '<p>Failed to load content.</p>';
         console.error('Error loading content:', error);
+        window.location.href = url; // Fallback to normal load if AJAX fails
       });
+  }, 500); // Matches the .5s transition in CSS
+}
+
+// Global Click Interceptor
+document.addEventListener('click', function(event) {
+  const link = event.target.closest('a'); // Better than target.matches for nested icons
+  
+  if (link && 
+      link.href && 
+      link.origin === window.location.origin && // Internal links only
+      !link.getAttribute('href').startsWith('#') && // Not anchors
+      link.target !== "_blank" // Not new tabs
+  ) {
+    event.preventDefault();
+    loadContent(link.href);
   }
+});
 
-  // Handle click events on navigation links
- 
-  document.addEventListener('click', function(event) {
-    if (event.target.matches('a') && !(event.target.getAttribute('href').startsWith('http') || event.target.getAttribute('href').startsWith('mailto'))) {
-      event.preventDefault();
-      loadContent(event.target.href);
-    }
-  });
-
-  // Handle browser navigation (Back/Forward buttons)
-  window.addEventListener('popstate', function() {
-    loadContent(location.pathname);
-  });
+window.addEventListener('popstate', () => loadContent(location.pathname));
 </script>
 </body>
 </html>
