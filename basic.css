@@ -18,7 +18,6 @@ body {
     font-family: var(--font-main);
     line-height: 1.6;
     color: var(--text);
-    /* Absolute path / ensures this works on sub-folders */
     background: url("/background.jpg") fixed center/cover;
     min-height: 100vh;
     display: flex;
@@ -34,23 +33,13 @@ body {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: opacity 0.4s ease, transform 0.4s ease;
-    opacity: 1;
 }
 
-/* AJAX Transition Classes */
-.fade-out {
-    opacity: 0 !important;
-    transform: translateY(-10px);
-}
+.fade-out { opacity: 0 !important; transform: translateY(-10px); }
+.fade-in { opacity: 1 !important; transform: translateY(0); }
 
-.fade-in {
-    opacity: 1 !important;
-    transform: translateY(0);
-}
-
-/* Typography */
 .post { margin-bottom: 3rem; }
-.post h1, .post h3 { font-size: 2.5rem; color: var(--text); line-height: 1.2; margin-bottom: 0.5rem; }
+.post h3, .post h1 { font-size: 2.2rem; color: var(--text); line-height: 1.2; margin-bottom: 0.5rem; }
 
 .date {
     font-size: 0.85rem;
@@ -65,9 +54,7 @@ body {
 .entry p { margin-bottom: 1.5rem; }
 .entry h2 { margin: 2rem 0 1rem; font-size: 1.8rem; }
 .entry a { color: var(--primary); font-weight: bold; text-decoration: none; }
-.entry a:hover { border-bottom: 2px solid var(--primary); }
 
-/* Bio Section */
 .profile-section { display: flex; gap: 25px; padding: 2.5rem 0; align-items: center; border-top: 1px solid var(--border); margin-top: 2rem; }
 .profile-img { border-radius: 50%; width: 100px; height: 100px; object-fit: cover; border: 3px solid var(--primary); }
 .profile-info h6 { font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 900; }
@@ -79,13 +66,14 @@ button:hover { background: var(--primary); color: white; }
 button:hover a { color: white !important; }
 #ssh-btn { border-style: dashed; color: var(--primary); }
 
-/* Navigation */
 .pagination { display: flex; justify-content: center; gap: 10px; margin: 2rem 0; }
 .pagination a { padding: 8px 16px; border: 1px solid var(--primary); border-radius: 6px; color: var(--primary); text-decoration: none; }
 .pagination a.current { background: var(--primary); color: white; }
 
 .post-navigation { display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem; }
 .home-link { display: inline-block; margin-bottom: 2rem; color: var(--primary); text-decoration: none; font-weight: bold; }
+
+center img { margin-top: 2rem; max-width: 30px; opacity: 0.7; }
 
 @media (max-width: 600px) {
     body { padding: 0; }
