@@ -100,7 +100,7 @@ button:hover a { color: white !important; }
 .post-navigation { display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem; }
 .home-link { display: inline-block; margin-bottom: 2rem; color: var(--primary); text-decoration: none; font-weight: bold; }
 
-center img { margin-top: 2rem; max-width: 150px; opacity: 0.9; }
+center img { margin-top: 2rem; max-width: 50px; opacity: 0.9; }
 
 @media (max-width: 600px) {
     body { padding: 0; }
