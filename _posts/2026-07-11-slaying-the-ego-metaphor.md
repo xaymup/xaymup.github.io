@@ -5,9 +5,6 @@ date: 2026-07-11 10:24:00 +0200
 categories: spirituality philosophy neurobiology self-improvement
 ---
 
-![Serene Islamic geometric pattern architecture light and shadow](https://images.stockcake.com/public/3/0/9/309cdc00-714f-4b35-b8d2-c648a984556b_large/sacred-light-patterns-stockcake.jpg)
-*Slaying the ego brings inner and outer light.*
-
 When we read ancient scriptures, words like "kill" or "slay" often jump off the page, demanding our immediate attention—and sometimes, our discomfort. In the Quran, there are stern verses addressing hypocrites (*munafiqun*) and polytheists/pantheists (*mushrikun*). But if we only read these verses through the lens of historical battles, we miss the profound, psychological surgery the text is actually performing. 
 
 The greatest battles aren't fought on physical fields, but within the landscape of the human heart. Let's look at what it actually means to "kill" the hypocrite and the polytheist, metaphorically, and why this internal ego-death is exactly what our modern society desperately needs.
