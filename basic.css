@@ -68,10 +68,29 @@ hr {
 .profile-info h6 { font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 900; }
 
 .button-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
-button { background: transparent; border: 2px solid var(--primary); padding: 8px 16px; border-radius: 6px; cursor: pointer; transition: 0.3s; font-weight: bold; font-family: inherit; }
+
+button { 
+    background: transparent; 
+    border: 2px solid var(--primary); 
+    padding: 8px 16px; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: 0.3s; 
+    font-weight: bold; 
+    font-family: inherit; 
+    color: var(--primary); /* Default color for buttons without <a> tags */
+}
+
 button a { color: var(--primary); text-decoration: none; }
-button:hover { background: var(--primary); color: white; }
+
+/* FIXED: Specificity fix for the SSH button hover */
+button:hover, button:hover#ssh-btn { 
+    background: var(--primary); 
+    color: white !important; 
+}
+
 button:hover a { color: white !important; }
+
 #ssh-btn { border-style: dashed; color: var(--primary); }
 
 .pagination { display: flex; justify-content: center; gap: 10px; margin: 2rem 0; }
@@ -81,12 +100,7 @@ button:hover a { color: white !important; }
 .post-navigation { display: flex; justify-content: space-between; margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 2rem; }
 .home-link { display: inline-block; margin-bottom: 2rem; color: var(--primary); text-decoration: none; font-weight: bold; }
 
-/* FIXED: Increased Logo Size */
-center img { 
-    margin-top: 2rem; 
-    max-width: 150px; 
-    opacity: 0.9; 
-}
+center img { margin-top: 2rem; max-width: 150px; opacity: 0.9; }
 
 @media (max-width: 600px) {
     body { padding: 0; }
