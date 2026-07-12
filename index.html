@@ -99,48 +99,51 @@ function loadContent(url) {
   const contentArea = document.getElementById('content');
   
   // 1. Start Fade Out
-  contentArea.classList.remove('fade-in');
   contentArea.classList.add('fade-out');
 
-  // Wait for the .5s fade-out animation to finish
+  // Wait for CSS transition (0.4s)
   setTimeout(() => {
     fetch(url)
-      .then(response => response.text())
+      .then(response => {
+        if (!response.ok) throw new Error('Page not found');
+        return response.text();
+      })
       .then(html => {
-        // 2. Parse the new HTML string
+        // 2. USE DOMParser to avoid injecting <html>/<body> tags
         const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
-        const newContent = doc.querySelector('#content').innerHTML;
-        const newTitle = doc.querySelector('title').innerText;
+        const newContent = doc.querySelector('#content');
 
-        // 3. Update the Page
-        contentArea.innerHTML = newContent;
-        document.title = newTitle;
-        history.pushState(null, '', url);
-        
-        // 4. Scroll to top and Fade In
-        window.scrollTo({ top: 0, behavior: 'instant' });
-        contentArea.classList.remove('fade-out');
-        contentArea.classList.add('fade-in');
+        if (newContent) {
+          contentArea.innerHTML = newContent.innerHTML;
+          document.title = doc.querySelector('title').innerText;
+          history.pushState(null, '', url);
+          
+          // 3. Reset View
+          window.scrollTo({ top: 0, behavior: 'instant' });
+          contentArea.classList.remove('fade-out');
+          contentArea.classList.add('fade-in');
+        } else {
+          // Fallback if the new page doesn't have a #content div
+          window.location.href = url;
+        }
       })
       .catch(error => {
-        console.error('Error loading content:', error);
-        window.location.href = url; // Fallback to normal load if AJAX fails
+        console.error('AJAX Error:', error);
+        window.location.href = url; // Hard reload if anything fails
       });
-  }, 500); // Matches the .5s transition in CSS
+  }, 400); 
 }
 
-// Global Click Interceptor
-document.addEventListener('click', function(event) {
-  const link = event.target.closest('a'); // Better than target.matches for nested icons
-  
+// Global click handler for all internal links
+document.addEventListener('click', function(e) {
+  const link = e.target.closest('a');
   if (link && 
       link.href && 
-      link.origin === window.location.origin && // Internal links only
-      !link.getAttribute('href').startsWith('#') && // Not anchors
-      link.target !== "_blank" // Not new tabs
-  ) {
-    event.preventDefault();
+      link.origin === window.location.origin && 
+      !link.getAttribute('href').startsWith('#') &&
+      link.target !== "_blank") {
+    e.preventDefault();
     loadContent(link.href);
   }
 });
